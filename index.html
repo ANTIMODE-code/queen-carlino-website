@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Il sito è pensato chiaro: impedisce ai browser in modalità scura di invertire i colori -->
+  <meta name="color-scheme" content="light only">
+  <style>:root { color-scheme: light only; }</style>
 
   <!-- SEO Optimization -->
   <title>Queen Carlino Fashion Boutique Capua | Moda Donna & Accessori</title>
@@ -48,8 +51,8 @@
       <div class="flex justify-between items-center h-20">
         <!-- Logo -->
         <a href="#" class="flex flex-col items-start">
-          <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-brand-dark uppercase">Queen Carlino</span>
-          <span class="text-xs tracking-[0.25em] text-brand-accent uppercase -mt-1">Fashion Boutique • Capua</span>
+          <span class="font-serif text-lg sm:text-3xl font-bold tracking-wider text-brand-dark uppercase whitespace-nowrap">Queen Carlino</span>
+          <span class="text-[9px] sm:text-xs tracking-[0.15em] sm:tracking-[0.25em] text-brand-accent uppercase -mt-1 whitespace-nowrap">Fashion Boutique • Capua</span>
         </a>
 
         <!-- Desktop Navigation -->
@@ -61,7 +64,7 @@
         </nav>
 
         <!-- Right Icons -->
-        <div class="flex items-center space-x-5">
+        <div class="flex items-center space-x-3 sm:space-x-5">
           <div id="lang-switch" class="flex items-center text-xs font-semibold tracking-wider">
             <button type="button" data-lang="it" class="px-1.5 py-1">IT</button>
             <span class="text-gray-300">|</span>
