@@ -23,9 +23,8 @@ auth:
   avatar_url_claim: avatar_url
 
 locale: "it"
-# Finché il dominio non è attivo su Netlify i link puntano all'indirizzo netlify.app.
-site_url: "https://adorable-platypus-48773e.netlify.app"
-display_url: "https://adorable-platypus-48773e.netlify.app"
+site_url: "https://queencarlinocapua.com"
+display_url: "https://queencarlinocapua.com"
 logo_url: "/logo.jpeg"
 
 media_folder: "images/products"
