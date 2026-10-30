@@ -6,7 +6,7 @@
 
   <!-- SEO Optimization -->
   <title>Queen Carlino Fashion Boutique Capua | Moda Donna & Accessori</title>
-  <meta name="description" content="Queen Carlino Fashion Boutique a Capua (CE) in Corso Gran Priorato di Malta 118. Abbigliamento donna, abiti da sera e outfit glamour. Ordina online via WhatsApp o PayPal.">
+  <meta name="description" content="Queen Carlino Fashion Boutique a Capua (CE) in Corso Gran Priorato di Malta 118. Abbigliamento donna, abiti da sera e outfit glamour. Ordina online via WhatsApp.">
   <meta name="keywords" content="Queen Carlino, Boutique Capua, Moda Donna Capua, Abbigliamento Caserta, Abiti da Sera Capua, Shopping Capua">
   <meta name="robots" content="index, follow">
 
@@ -118,7 +118,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-3">Le Nostre Collezioni</h2>
-        <p class="text-gray-500 uppercase tracking-widest text-xs">Ordina su WhatsApp o paga con PayPal</p>
+        <p class="text-gray-500 uppercase tracking-widest text-xs">Ordina comodamente su WhatsApp</p>
         <div class="w-16 h-0.5 bg-brand-gold mx-auto mt-4"></div>
       </div>
 
@@ -193,7 +193,8 @@
   <script>
     (function () {
       var WHATSAPP = "393914370325";
-      var PAYPAL = "https://www.paypal.me/queencarlino";
+      // Link PayPal Business del negozio: vuoto = bottone nascosto.
+      var PAYPAL = "";
       var tabs = document.getElementById("catalog-tabs");
       var grid = document.getElementById("product-grid");
       var empty = document.getElementById("product-empty");
@@ -235,7 +236,7 @@
               '<div class="space-y-2 mt-3">' +
                 '<a href="https://wa.me/' + WHATSAPP + '?text=' + msg + '" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2 px-2 text-[10px] sm:text-xs font-semibold uppercase tracking-wider rounded transition-colors">' +
                   '<i class="fab fa-whatsapp text-sm"></i> Ordina su WhatsApp</a>' +
-                (p.available && p.price != null ?
+                (PAYPAL && p.available && p.price != null ?
                   '<a href="' + PAYPAL + '/' + p.price + 'EUR" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-2 text-[10px] sm:text-xs font-semibold uppercase tracking-wider rounded transition-colors">' +
                   '<i class="fab fa-paypal text-sm"></i> Paga con PayPal</a>' : '') +
               '</div>' +
