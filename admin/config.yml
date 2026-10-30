@@ -41,7 +41,7 @@ collections:
     create: true
     delete: true
     slug: "{{slug}}"
-    summary: "{{title}} · {{price}} €"
+    summary: "{{title}}"
     sortable_fields: ["title", "price"]
     fields:
       - { label: "Nome del capo", name: "title", widget: "string" }
