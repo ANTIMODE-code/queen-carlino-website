@@ -6,7 +6,7 @@
 
   <!-- SEO Optimization -->
   <title>Queen Carlino Fashion Boutique Capua | Moda Donna & Accessori</title>
-  <meta name="description" content="Queen Carlino Fashion Boutique a Capua (CE) in Corso Gran Priorato di Malta 118. Abbigliamento donna, abiti da sera e outfit glamour. Ordina online via WhatsApp o PayPal.">
+  <meta name="description" content="Queen Carlino Fashion Boutique a Capua (CE) in Corso Gran Priorato di Malta 118. Abbigliamento donna, abiti da sera e outfit glamour. Ordina su WhatsApp o vieni a trovarci in boutique.">
   <meta name="keywords" content="Queen Carlino, Boutique Capua, Moda Donna Capua, Abbigliamento Caserta, Abiti da Sera Capua, Shopping Capua">
   <meta name="robots" content="index, follow">
 
@@ -14,7 +14,7 @@
   <meta property="og:title" content="Queen Carlino Fashion Boutique | Capua">
   <meta property="og:description" content="L'eleganza che ti incorona ogni giorno. Scopri le collezioni e ordina comodamente da casa.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sprightly-choux-13f1a8.netlify.app">
+  <meta property="og:url" content="https://queencarlinocapua.com">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -55,13 +55,20 @@
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
           <a href="#home" class="hover:text-brand-gold transition-colors">Home</a>
-          <a href="#collezione" class="hover:text-brand-gold transition-colors">Collezione</a>
-          <a href="#chi-siamo" class="hover:text-brand-gold transition-colors">Chi Siamo</a>
-          <a href="#contatti" class="hover:text-brand-gold transition-colors">Contatti</a>
+          <a href="#collezione" class="hover:text-brand-gold transition-colors" data-i18n="nav.collection">Collezione</a>
+          <a href="#chi-siamo" class="hover:text-brand-gold transition-colors" data-i18n="nav.about">Chi Siamo</a>
+          <a href="#contatti" class="hover:text-brand-gold transition-colors" data-i18n="nav.contacts">Contatti</a>
         </nav>
 
         <!-- Right Icons -->
         <div class="flex items-center space-x-5">
+          <div id="lang-switch" class="flex items-center text-xs font-semibold tracking-wider">
+            <button type="button" data-lang="it" class="px-1.5 py-1">IT</button>
+            <span class="text-gray-300">|</span>
+            <button type="button" data-lang="en" class="px-1.5 py-1">EN</button>
+            <span class="text-gray-300">|</span>
+            <button type="button" data-lang="fr" class="px-1.5 py-1">FR</button>
+          </div>
           <a href="https://www.instagram.com/queen_carlinocapua/" target="_blank" class="text-gray-700 hover:text-brand-gold transition-colors" title="Instagram">
             <i class="fab fa-instagram text-xl"></i>
           </a>
@@ -79,19 +86,19 @@
       <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop" alt="Queen Carlino Boutique" class="w-full h-full object-cover">
     </div>
     <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
-      <span class="text-brand-gold uppercase tracking-[0.3em] text-sm font-semibold mb-3 block">Boutique a Capua (CE)</span>
-      <h1 class="font-serif text-4xl sm:text-6xl font-normal leading-tight mb-6">
+      <span class="text-brand-gold uppercase tracking-[0.3em] text-sm font-semibold mb-3 block" data-i18n="hero.kicker">Boutique a Capua (CE)</span>
+      <h1 class="font-serif text-4xl sm:text-6xl font-normal leading-tight mb-6" data-i18n="hero.title">
         L'eleganza che ti incorona ogni giorno
       </h1>
-      <p class="text-gray-300 text-lg sm:text-xl font-light mb-8 max-w-2xl mx-auto">
+      <p class="text-gray-300 text-lg sm:text-xl font-light mb-8 max-w-2xl mx-auto" data-i18n="hero.text">
         Dettagli di stile per regine moderne. Capi esclusivi selezionati con cura per valorizzare la tua unicità.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="#collezione" class="bg-brand-gold hover:bg-yellow-600 text-brand-dark font-medium px-8 py-3 rounded-none tracking-wider uppercase text-sm transition-all shadow-lg">
+        <a href="#collezione" class="bg-brand-gold hover:bg-yellow-600 text-brand-dark font-medium px-8 py-3 rounded-none tracking-wider uppercase text-sm transition-all shadow-lg" data-i18n="hero.cta">
           Scopri la Collezione
         </a>
         <a href="https://wa.me/393914370325?text=Ciao!%20Vorrei%20informazioni%20sulle%20vostre%20collezioni." target="_blank" class="border border-white hover:bg-white hover:text-brand-dark text-white font-medium px-8 py-3 rounded-none tracking-wider uppercase text-sm transition-all flex items-center justify-center gap-2">
-          <i class="fab fa-whatsapp"></i> Scrivici su WhatsApp
+          <i class="fab fa-whatsapp"></i> <span data-i18n="hero.whatsapp">Scrivici su WhatsApp</span>
         </a>
       </div>
     </div>
@@ -101,12 +108,12 @@
   <section id="chi-siamo" class="py-20 bg-white">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-4">Chi Siamo</h2>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-4" data-i18n="about.title">Chi Siamo</h2>
         <div class="w-16 h-0.5 bg-brand-gold mx-auto mb-8"></div>
-        <p class="text-gray-700 text-lg leading-relaxed mb-6 font-light">
+        <p class="text-gray-700 text-lg leading-relaxed mb-6 font-light" data-i18n-html="about.p1">
           Per noi di <strong>Queen Carlino</strong>, la boutique non è semplicemente un negozio di abbigliamento, ma un salotto di moda dove sentirsi accolte, consigliate e valorizzate.
         </p>
-        <p class="text-gray-600 leading-relaxed font-light">
+        <p class="text-gray-600 leading-relaxed font-light" data-i18n="about.p2">
           Amiamo guidare le nostre clienti nella scelta dell'outfit perfetto per ogni occasione: dalla vita di tutti i giorni agli eventi speciali. Oltre le porte della nostra boutique a Capua, oggi portiamo la nostra selezione online per far sentire "regina" ogni donna, ovunque si trovi.
         </p>
       </div>
@@ -117,86 +124,20 @@
   <section id="collezione" class="py-20 bg-brand-light">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-3">Collezione in Evidenza</h2>
-        <p class="text-gray-500 uppercase tracking-widest text-xs">Scegli la modalità di acquisto che preferisci</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-3" data-i18n="collection.title">Le Nostre Collezioni</h2>
+        <p class="text-gray-500 uppercase tracking-widest text-xs" data-i18n="collection.subtitle">Ordina su WhatsApp o vieni in boutique</p>
         <div class="w-16 h-0.5 bg-brand-gold mx-auto mt-4"></div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Prodotto 1 -->
-        <div class="bg-white group shadow-sm hover:shadow-md transition-shadow flex flex-col">
-          <div class="relative overflow-hidden aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1000&auto=format&fit=crop" alt="Abito da Sera Chic Capua" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6 text-center flex-grow flex flex-col justify-between">
-            <div>
-              <h3 class="font-serif text-xl font-normal mb-2">Abito da Sera Chic</h3>
-              <p class="text-gray-500 text-sm mb-4">Elegante, versatile e di tendenza.</p>
-            </div>
-            <div class="space-y-2 mt-4">
-              <!-- WhatsApp -->
-              <a href="https://wa.me/393914370325?text=Ciao!%20Vorrei%20ordinare%20l'Abito%20da%20Sera%20Chic" target="_blank" class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2 px-4 text-xs font-semibold uppercase tracking-wider rounded transition-colors">
-                <i class="fab fa-whatsapp text-sm"></i> Ordina su WhatsApp
-              </a>
-              <!-- PayPal -->
-              <a href="https://www.paypal.me/queencarlino" target="_blank" class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 text-xs font-semibold uppercase tracking-wider rounded transition-colors">
-                <i class="fab fa-paypal text-sm"></i> Paga con PayPal
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Prodotto 2 -->
-        <div class="bg-white group shadow-sm hover:shadow-md transition-shadow flex flex-col">
-          <div class="relative overflow-hidden aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop" alt="Tailleur Moderno Queen Carlino" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6 text-center flex-grow flex flex-col justify-between">
-            <div>
-              <h3 class="font-serif text-xl font-normal mb-2">Look Tailleur Moderno</h3>
-              <p class="text-gray-500 text-sm mb-4">Taglio impeccabile per ogni occasione.</p>
-            </div>
-            <div class="space-y-2 mt-4">
-              <!-- WhatsApp -->
-              <a href="https://wa.me/393914370325?text=Ciao!%20Vorrei%20ordinare%20il%20Look%20Tailleur%20Moderno" target="_blank" class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2 px-4 text-xs font-semibold uppercase tracking-wider rounded transition-colors">
-                <i class="fab fa-whatsapp text-sm"></i> Ordina su WhatsApp
-              </a>
-              <!-- PayPal -->
-              <a href="https://www.paypal.me/queencarlino" target="_blank" class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 text-xs font-semibold uppercase tracking-wider rounded transition-colors">
-                <i class="fab fa-paypal text-sm"></i> Paga con PayPal
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Prodotto 3 -->
-        <div class="bg-white group shadow-sm hover:shadow-md transition-shadow flex flex-col">
-          <div class="relative overflow-hidden aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000&auto=format&fit=crop" alt="Outfit Casual Chic Capua" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6 text-center flex-grow flex flex-col justify-between">
-            <div>
-              <h3 class="font-serif text-xl font-normal mb-2">Outfit Casual Chic</h3>
-              <p class="text-gray-500 text-sm mb-4">Stile quotidiano e raffinatezza.</p>
-            </div>
-            <div class="space-y-2 mt-4">
-              <!-- WhatsApp -->
-              <a href="https://wa.me/393914370325?text=Ciao!%20Vorrei%20ordinare%20l'Outfit%20Casual%20Chic" target="_blank" class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2 px-4 text-xs font-semibold uppercase tracking-wider rounded transition-colors">
-                <i class="fab fa-whatsapp text-sm"></i> Ordina su WhatsApp
-              </a>
-              <!-- PayPal -->
-              <a href="https://www.paypal.me/queencarlino" target="_blank" class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 text-xs font-semibold uppercase tracking-wider rounded transition-colors">
-                <i class="fab fa-paypal text-sm"></i> Paga con PayPal
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Cataloghi e prodotti: generati da data/catalogo.json (gestito dal pannello /admin) -->
+      <div id="catalog-tabs" class="flex flex-wrap justify-center gap-2 mb-10"></div>
+      <div id="product-grid" class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8"></div>
+      <p id="product-empty" class="hidden text-center text-gray-500 font-light py-12" data-i18n="collection.empty">Nuovi capi in arrivo. Seguici su Instagram per le novità.</p>
 
       <div class="text-center mt-12">
         <a href="https://www.instagram.com/queen_carlinocapua/" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium px-8 py-3 rounded-full hover:opacity-90 transition-opacity">
           <i class="fab fa-instagram text-lg"></i>
-          Guarda tutti gli altri capi su Instagram
+          <span data-i18n="collection.instagram">Guarda tutti gli altri capi su Instagram</span>
         </a>
       </div>
     </div>
@@ -206,7 +147,7 @@
   <section id="contatti" class="py-20 bg-white border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-3">Vieni a Trovarci a Capua</h2>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-3" data-i18n="contacts.title">Vieni a Trovarci a Capua</h2>
         <div class="w-16 h-0.5 bg-brand-gold mx-auto"></div>
       </div>
 
@@ -214,7 +155,7 @@
         <!-- Indirizzo -->
         <div class="p-6 bg-brand-light border border-gray-100">
           <div class="text-brand-gold text-2xl mb-4"><i class="fas fa-map-marker-alt"></i></div>
-          <h3 class="font-serif text-xl font-semibold mb-2">Indirizzo</h3>
+          <h3 class="font-serif text-xl font-semibold mb-2" data-i18n="contacts.address">Indirizzo</h3>
           <p class="text-gray-600 font-light">
             Corso Gran Priorato di Malta 118<br>
             81043 Capua (CE)
@@ -224,8 +165,8 @@
         <!-- Orari -->
         <div class="p-6 bg-brand-light border border-gray-100">
           <div class="text-brand-gold text-2xl mb-4"><i class="fas fa-clock"></i></div>
-          <h3 class="font-serif text-xl font-semibold mb-2">Orari d'Apertura</h3>
-          <p class="text-gray-600 font-light">
+          <h3 class="font-serif text-xl font-semibold mb-2" data-i18n="contacts.hours">Orari d'Apertura</h3>
+          <p class="text-gray-600 font-light" data-i18n-html="contacts.hoursText">
             Lunedì - Sabato:<br>
             09:30 - 13:00 / 16:30 - 20:00<br>
             <span class="text-sm text-gray-400">Domenica: Chiuso</span>
@@ -235,11 +176,11 @@
         <!-- Contatti -->
         <div class="p-6 bg-brand-light border border-gray-100">
           <div class="text-brand-gold text-2xl mb-4"><i class="fab fa-whatsapp"></i></div>
-          <h3 class="font-serif text-xl font-semibold mb-2">Info e Ordini</h3>
+          <h3 class="font-serif text-xl font-semibold mb-2" data-i18n="contacts.info">Info e Ordini</h3>
           <p class="text-gray-600 font-light mb-3">
             WhatsApp: +39 391 437 0325
           </p>
-          <a href="https://wa.me/393914370325" target="_blank" class="text-xs uppercase tracking-wider text-brand-dark font-semibold border-b border-brand-dark pb-0.5 hover:text-brand-gold hover:border-brand-gold transition-colors">
+          <a href="https://wa.me/393914370325" target="_blank" class="text-xs uppercase tracking-wider text-brand-dark font-semibold border-b border-brand-dark pb-0.5 hover:text-brand-gold hover:border-brand-gold transition-colors" data-i18n="contacts.send">
             Invia un messaggio
           </a>
         </div>
@@ -252,9 +193,206 @@
     <div class="max-w-7xl mx-auto px-4 text-center">
       <p class="font-serif text-xl tracking-wider uppercase mb-2">Queen Carlino</p>
       <p class="text-xs text-gray-400 tracking-widest uppercase mb-6">Fashion Boutique • Corso Gran Priorato di Malta 118, Capua (CE)</p>
-      <p class="text-xs text-gray-500">&copy; 2026 Queen Carlino Fashion Boutique. Tutti i diritti riservati.</p>
+      <p class="text-xs text-gray-500">&copy; 2026 Queen Carlino Fashion Boutique. <span data-i18n="footer.rights">Tutti i diritti riservati.</span></p>
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var WHATSAPP = "393914370325";
+      // Link PayPal Business del negozio (vuoto = bottone nascosto).
+      var PAYPAL = "";
+      var tabs = document.getElementById("catalog-tabs");
+      var grid = document.getElementById("product-grid");
+      var empty = document.getElementById("product-empty");
+      var data = { catalogs: [], products: [] };
+
+      // Testi fissi del sito. I nomi e le descrizioni dei capi restano come li scrive la boutique.
+      var TEXTS = {
+        it: {
+          "nav.collection": "Collezione", "nav.about": "Chi Siamo", "nav.contacts": "Contatti",
+          "hero.kicker": "Boutique a Capua (CE)",
+          "hero.title": "L'eleganza che ti incorona ogni giorno",
+          "hero.text": "Dettagli di stile per regine moderne. Capi esclusivi selezionati con cura per valorizzare la tua unicità.",
+          "hero.cta": "Scopri la Collezione", "hero.whatsapp": "Scrivici su WhatsApp",
+          "about.title": "Chi Siamo",
+          "about.p1": "Per noi di <strong>Queen Carlino</strong>, la boutique non è semplicemente un negozio di abbigliamento, ma un salotto di moda dove sentirsi accolte, consigliate e valorizzate.",
+          "about.p2": "Amiamo guidare le nostre clienti nella scelta dell'outfit perfetto per ogni occasione: dalla vita di tutti i giorni agli eventi speciali. Oltre le porte della nostra boutique a Capua, oggi portiamo la nostra selezione online per far sentire \"regina\" ogni donna, ovunque si trovi.",
+          "collection.title": "Le Nostre Collezioni", "collection.subtitle": "Ordina su WhatsApp o vieni in boutique",
+          "collection.empty": "Nuovi capi in arrivo. Seguici su Instagram per le novità.",
+          "collection.instagram": "Guarda tutti gli altri capi su Instagram",
+          "contacts.title": "Vieni a Trovarci a Capua", "contacts.address": "Indirizzo", "contacts.hours": "Orari d'Apertura",
+          "contacts.hoursText": "Lunedì - Sabato:<br>09:30 - 13:00 / 16:30 - 20:00<br><span class=\"text-sm text-gray-400\">Domenica: Chiuso</span>",
+          "contacts.info": "Info e Ordini", "contacts.send": "Invia un messaggio",
+          "footer.rights": "Tutti i diritti riservati.",
+          "product.all": "Tutti", "product.soldOut": "Esaurito", "product.priceInStore": "Prezzo in boutique",
+          "product.sizes": "Taglie", "product.order": "Ordina su WhatsApp", "product.paypal": "Paga con PayPal",
+          "product.message": "Ciao! Vorrei informazioni su: "
+        },
+        en: {
+          "nav.collection": "Collection", "nav.about": "About Us", "nav.contacts": "Contact",
+          "hero.kicker": "Boutique in Capua, Italy",
+          "hero.title": "Elegance that crowns you every day",
+          "hero.text": "Style details for modern queens. Exclusive pieces, carefully selected to bring out your uniqueness.",
+          "hero.cta": "Discover the Collection", "hero.whatsapp": "Message us on WhatsApp",
+          "about.title": "About Us",
+          "about.p1": "For us at <strong>Queen Carlino</strong>, the boutique is not just a clothing store, but a fashion lounge where you feel welcomed, advised and valued.",
+          "about.p2": "We love guiding our clients to the perfect outfit for every occasion, from everyday life to special events. Beyond the doors of our boutique in Capua, we now bring our selection online so every woman can feel like a \"queen\", wherever she is.",
+          "collection.title": "Our Collections", "collection.subtitle": "Order on WhatsApp or visit the boutique",
+          "collection.empty": "New pieces coming soon. Follow us on Instagram for the latest arrivals.",
+          "collection.instagram": "See all our other pieces on Instagram",
+          "contacts.title": "Visit Us in Capua", "contacts.address": "Address", "contacts.hours": "Opening Hours",
+          "contacts.hoursText": "Monday - Saturday:<br>09:30 - 13:00 / 16:30 - 20:00<br><span class=\"text-sm text-gray-400\">Sunday: Closed</span>",
+          "contacts.info": "Info & Orders", "contacts.send": "Send a message",
+          "footer.rights": "All rights reserved.",
+          "product.all": "All", "product.soldOut": "Sold out", "product.priceInStore": "Price in store",
+          "product.sizes": "Sizes", "product.order": "Order on WhatsApp", "product.paypal": "Pay with PayPal",
+          "product.message": "Hello! I would like information about: "
+        },
+        fr: {
+          "nav.collection": "Collection", "nav.about": "Qui sommes-nous", "nav.contacts": "Contact",
+          "hero.kicker": "Boutique à Capoue, Italie",
+          "hero.title": "L'élégance qui vous couronne chaque jour",
+          "hero.text": "Des détails de style pour les reines modernes. Des pièces exclusives, choisies avec soin pour révéler votre singularité.",
+          "hero.cta": "Découvrir la Collection", "hero.whatsapp": "Écrivez-nous sur WhatsApp",
+          "about.title": "Qui sommes-nous",
+          "about.p1": "Pour nous, chez <strong>Queen Carlino</strong>, la boutique n'est pas seulement un magasin de vêtements, mais un salon de mode où l'on se sent accueillie, conseillée et mise en valeur.",
+          "about.p2": "Nous aimons guider nos clientes vers la tenue parfaite pour chaque occasion, du quotidien aux grands événements. Au-delà des portes de notre boutique à Capoue, nous proposons aujourd'hui notre sélection en ligne pour que chaque femme se sente \"reine\", où qu'elle soit.",
+          "collection.title": "Nos Collections", "collection.subtitle": "Commandez sur WhatsApp ou venez en boutique",
+          "collection.empty": "Nouvelles pièces bientôt disponibles. Suivez-nous sur Instagram pour les nouveautés.",
+          "collection.instagram": "Voir toutes nos autres pièces sur Instagram",
+          "contacts.title": "Venez nous voir à Capoue", "contacts.address": "Adresse", "contacts.hours": "Horaires d'ouverture",
+          "contacts.hoursText": "Lundi - Samedi :<br>09:30 - 13:00 / 16:30 - 20:00<br><span class=\"text-sm text-gray-400\">Dimanche : Fermé</span>",
+          "contacts.info": "Infos et Commandes", "contacts.send": "Envoyer un message",
+          "footer.rights": "Tous droits réservés.",
+          "product.all": "Tout", "product.soldOut": "Épuisé", "product.priceInStore": "Prix en boutique",
+          "product.sizes": "Tailles", "product.order": "Commander sur WhatsApp", "product.paypal": "Payer avec PayPal",
+          "product.message": "Bonjour ! Je souhaiterais des informations sur : "
+        }
+      };
+      var LOCALES = { it: "it-IT", en: "en-GB", fr: "fr-FR" };
+
+      function initialLang() {
+        try {
+          var saved = localStorage.getItem("qc-lang");
+          if (TEXTS[saved]) return saved;
+        } catch (e) {}
+        var browser = (navigator.language || "it").slice(0, 2);
+        return TEXTS[browser] ? browser : "it";
+      }
+      var lang = initialLang();
+
+      function t(key) {
+        return TEXTS[lang][key];
+      }
+
+      function applyLang() {
+        document.documentElement.lang = lang;
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          el.textContent = t(el.getAttribute("data-i18n"));
+        });
+        document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+          el.innerHTML = t(el.getAttribute("data-i18n-html"));
+        });
+        document.querySelectorAll("#lang-switch [data-lang]").forEach(function (b) {
+          var active = b.getAttribute("data-lang") === lang;
+          b.className = "px-1.5 py-1 transition-colors " + (active ? "text-brand-gold" : "text-gray-500 hover:text-brand-dark");
+          b.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+      }
+
+      document.querySelectorAll("#lang-switch [data-lang]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          lang = b.getAttribute("data-lang");
+          try { localStorage.setItem("qc-lang", lang); } catch (e) {}
+          applyLang();
+          render(currentCatalog());
+        });
+      });
+
+      function esc(text) {
+        var div = document.createElement("div");
+        div.textContent = text == null ? "" : String(text);
+        return div.innerHTML;
+      }
+
+      // Le foto caricate dal telefono sono pesanti: le ridimensiona l'Image CDN di Netlify.
+      function imageUrl(src, width) {
+        if (!src || src.indexOf("/") !== 0 || location.hostname === "localhost") return src;
+        return "/.netlify/images?url=" + encodeURIComponent(src) + "&w=" + width + "&q=80";
+      }
+
+      function price(p) {
+        if (p.price == null) return t("product.priceInStore");
+        return p.price.toLocaleString(LOCALES[lang], { style: "currency", currency: "EUR" });
+      }
+
+      function card(p) {
+        var msg = encodeURIComponent(t("product.message") + p.title);
+        var badge = p.available ? "" : '<span class="absolute top-3 left-3 bg-brand-dark text-white text-[10px] uppercase tracking-widest px-2 py-1">' + t("product.soldOut") + '</span>';
+        return '' +
+          '<div class="bg-white group shadow-sm hover:shadow-md transition-shadow flex flex-col">' +
+            '<div class="relative overflow-hidden aspect-[3/4] bg-gray-100">' +
+              '<img src="' + esc(imageUrl(p.image, 800)) + '" alt="' + esc(p.title) + '" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500' + (p.available ? '' : ' opacity-60') + '">' +
+              badge +
+            '</div>' +
+            '<div class="p-3 sm:p-6 text-center flex-grow flex flex-col justify-between">' +
+              '<div>' +
+                '<h3 class="font-serif text-base sm:text-xl font-normal mb-1">' + esc(p.title) + '</h3>' +
+                '<p class="text-brand-accent text-sm font-medium mb-2">' + esc(price(p)) + '</p>' +
+                (p.sizes ? '<p class="text-gray-400 text-xs uppercase tracking-wider mb-2">' + t("product.sizes") + ': ' + esc(p.sizes) + '</p>' : '') +
+                (p.description ? '<p class="text-gray-500 text-xs sm:text-sm mb-2 hidden sm:block">' + esc(p.description) + '</p>' : '') +
+              '</div>' +
+              '<div class="space-y-2 mt-3">' +
+                '<a href="https://wa.me/' + WHATSAPP + '?text=' + msg + '" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2 px-2 text-[10px] sm:text-xs font-semibold uppercase tracking-wider rounded transition-colors">' +
+                  '<i class="fab fa-whatsapp text-sm"></i> ' + t("product.order") + '</a>' +
+                (PAYPAL && p.available && p.price != null ?
+                  '<a href="' + PAYPAL + '/' + p.price + 'EUR" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-2 text-[10px] sm:text-xs font-semibold uppercase tracking-wider rounded transition-colors">' +
+                  '<i class="fab fa-paypal text-sm"></i> ' + t("product.paypal") + '</a>' : '') +
+              '</div>' +
+            '</div>' +
+          '</div>';
+      }
+
+      function render(selected) {
+        var list = data.products.filter(function (p) {
+          return selected === "tutti" || p.catalogs.indexOf(selected) !== -1;
+        });
+        var buttons = [{ slug: "tutti", title: t("product.all") }].concat(data.catalogs.filter(function (c) {
+          return data.products.some(function (p) { return p.catalogs.indexOf(c.slug) !== -1; });
+        }));
+        tabs.innerHTML = buttons.length > 2 || selected !== "tutti" ? buttons.map(function (c) {
+          var active = c.slug === selected;
+          return '<a href="#catalogo=' + esc(c.slug) + '" class="px-4 py-2 text-xs uppercase tracking-wider border transition-colors ' +
+            (active ? 'bg-brand-dark text-white border-brand-dark' : 'border-gray-300 text-gray-600 hover:border-brand-gold hover:text-brand-gold') + '">' + esc(c.title) + '</a>';
+        }).join("") : "";
+        grid.innerHTML = list.map(card).join("");
+        empty.classList.toggle("hidden", list.length > 0);
+      }
+
+      function currentCatalog() {
+        var match = location.hash.match(/^#catalogo=(.+)$/);
+        return match ? decodeURIComponent(match[1]) : "tutti";
+      }
+
+      window.addEventListener("hashchange", function () {
+        if (location.hash.indexOf("#catalogo=") !== 0) return;
+        render(currentCatalog());
+        document.getElementById("collezione").scrollIntoView({ behavior: "smooth" });
+      });
+
+      applyLang();
+
+      fetch("/data/catalogo.json", { cache: "no-cache" })
+        .then(function (r) { return r.json(); })
+        .then(function (json) {
+          data = json;
+          render(currentCatalog());
+          if (currentCatalog() !== "tutti") document.getElementById("collezione").scrollIntoView();
+        })
+        .catch(function () { empty.classList.remove("hidden"); });
+    })();
+  </script>
 </body>
-</html><script async src="/.netlify/scripts/hud?variant=owner-private" data-nf-variant="owner-private" data-netlify-site-id="6854ab6a-79a0-402f-8431-88c30fd6e376" data-app-host="app.netlify.com"></script>
+</html>
+

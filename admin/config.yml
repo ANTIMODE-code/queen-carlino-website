@@ -1,18 +1,62 @@
+# Accesso al pannello: verrà collegato a DecapBridge (email + password, senza GitHub).
 backend:
   name: git-gateway
   branch: main
+
+locale: "it"
+site_url: "https://queencarlinocapua.com"
+display_url: "https://queencarlinocapua.com"
+logo_url: "/logo.jpeg"
 
 media_folder: "images/products"
 public_folder: "/images/products"
 
 collections:
-  - name: "products"
-    label: "Prodotti Boutique"
-    folder: "content/products"
+  - name: "prodotti"
+    label: "Prodotti"
+    label_singular: "Prodotto"
+    description: "I capi in vendita. Ogni capo può stare in uno o più cataloghi."
+    folder: "content/prodotti"
+    format: "json"
     create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{price}} €"
+    sortable_fields: ["title", "price"]
+    fields:
+      - { label: "Nome del capo", name: "title", widget: "string" }
+      - { label: "Foto principale", name: "image", widget: "image", choose_url: false }
+      - label: "Altre foto"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Foto", name: "image", widget: "image", choose_url: false }
+      - { label: "Prezzo (€)", name: "price", widget: "number", value_type: "float", min: 0, required: false, hint: "Lascia vuoto per mostrare «Prezzo in boutique»" }
+      - label: "Cataloghi"
+        name: "catalogs"
+        widget: "relation"
+        collection: "cataloghi"
+        search_fields: ["title"]
+        value_field: "{{slug}}"
+        display_fields: ["title"]
+        multiple: true
+        required: false
+      - { label: "Taglie disponibili", name: "sizes", widget: "string", required: false, hint: "Es. S, M, L oppure Taglia unica" }
+      - { label: "Descrizione", name: "description", widget: "text", required: false }
+      - { label: "Disponibile", name: "available", widget: "boolean", default: true, hint: "Spegni quando il capo è esaurito: resta visibile con la scritta «Esaurito»" }
+      - { label: "Mostra sul sito", name: "published", widget: "boolean", default: true, hint: "Spegni per nasconderlo senza cancellarlo" }
+
+  - name: "cataloghi"
+    label: "Cataloghi"
+    label_singular: "Catalogo"
+    description: "Le collezioni del sito, es. «Abiti da sera» o «Autunno 2026»."
+    folder: "content/cataloghi"
+    format: "json"
+    create: true
+    delete: true
     slug: "{{slug}}"
     fields:
-      - { label: "Nome Capo", name: "title", widget: "string" }
-      - { label: "Prezzo (€)", name: "price", widget: "string" }
-      - { label: "Foto Prodotto", name: "image", widget: "image" }
-      - { label: "Descrizione", name: "body", widget: "markdown", required: false }
+      - { label: "Nome del catalogo", name: "title", widget: "string" }
+      - { label: "Breve descrizione", name: "description", widget: "string", required: false }
+      - { label: "Ordine", name: "order", widget: "number", value_type: "int", default: 10, hint: "I numeri più bassi compaiono per primi" }
+      - { label: "Mostra sul sito", name: "published", widget: "boolean", default: true }
